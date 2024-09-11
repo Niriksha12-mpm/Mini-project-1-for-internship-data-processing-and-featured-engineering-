@@ -1,0 +1,28 @@
+This Python code performs data processing, feature engineering, and builds a machine learning model using the Random Forest algorithm. Here's a brief summary of its working:
+
+1. Data Cleaning: Missing values in numerical columns (Age, Fare) are replaced with the median, and in categorical columns (Embarked), the mode is used. Irrelevant columns are dropped (PassengerId, Name, Ticket, Cabin).
+
+
+2. Feature Engineering:
+
+Categorical variables (Sex) are encoded as numerical values.
+
+New features (FamilySize, IsAlone, AgeGroup) are created to enhance prediction performance.
+
+
+
+3. Preprocessing Pipeline:
+
+Numerical features are scaled and imputed (missing values filled).
+
+Categorical features are imputed and one-hot encoded.
+
+
+
+4. Model Building: A Random Forest Classifier is trained on the preprocessed data. The pipeline transforms the training and test data.
+
+
+5. Prediction & Evaluation: After training, the model predicts outcomes on the test set, and its accuracy is calculated and printed.
+
+
+
